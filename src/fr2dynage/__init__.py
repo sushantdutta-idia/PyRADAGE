@@ -39,4 +39,4 @@ __all__ = [
     "compute_kinematic_age",
 ]
 
-__version__ = "0.9.0"
+__version__ = "1.0"
