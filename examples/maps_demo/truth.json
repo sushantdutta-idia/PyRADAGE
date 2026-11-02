@@ -1,0 +1,48 @@
+{
+  "schema_version": "fr2dynage-map-demo-truth-1",
+  "description": "Noiseless analytic images with supplied illustrative RMS/calibration uncertainties. No physical radio-source simulation is claimed.",
+  "shape_yx": [
+    49,
+    49
+  ],
+  "frequencies_mhz": [
+    150.0,
+    325.0,
+    610.0,
+    1400.0
+  ],
+  "reference_frequency_mhz": 451.7083541055158,
+  "rms_jy_per_beam": 2e-05,
+  "kpc_per_arcsec": 1.0,
+  "expansion": {
+    "configuration": "expansion.json",
+    "pixel_xy": [
+      36,
+      24
+    ],
+    "alpha_truth_fits": "exp-alpha-truth.fits",
+    "expected_alpha": 0.7250000000000001,
+    "expected_distance_kpc": 11.999999986462905,
+    "expected_age_myr": 3.5675819905327066,
+    "expected_age_error_myr": 0.3886202888542114,
+    "expansion_index": 0.8571428571428571,
+    "speed_km_s": 3000.0,
+    "inclination_deg": 70.0,
+    "clock": "conditional expansion age, m R/v_current"
+  },
+  "flow": {
+    "configuration": "flow.json",
+    "pixel_xy": [
+      35,
+      32
+    ],
+    "alpha_truth_fits": "flow-alpha-truth.fits",
+    "expected_alpha": 1.2,
+    "expected_distance_kpc": 43.967975411604115,
+    "expected_age_myr": 45.75064591287615,
+    "expected_age_error_myr": 4.66205079387347,
+    "speed_km_s": 1000.0,
+    "inclination_deg": 70.0,
+    "clock": "travel time along a supplied curved path; not total source age"
+  }
+}

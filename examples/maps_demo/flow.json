@@ -1,0 +1,56 @@
+{
+  "schema_version": "fr2dynage-map-1",
+  "source": {
+    "name": "Synthetic WAT curved-tail flow constraint",
+    "radio_class": "wat",
+    "activity_state": "active"
+  },
+  "images": [
+    {
+      "path": "flow-150.fits",
+      "frequency_mhz": 150.0,
+      "rms_jy_per_beam": 2e-05,
+      "calibration_fraction": 0.02
+    },
+    {
+      "path": "flow-325.fits",
+      "frequency_mhz": 325.0,
+      "rms_jy_per_beam": 2e-05,
+      "calibration_fraction": 0.02
+    },
+    {
+      "path": "flow-610.fits",
+      "frequency_mhz": 610.0,
+      "rms_jy_per_beam": 2e-05,
+      "calibration_fraction": 0.02
+    },
+    {
+      "path": "flow-1400.fits",
+      "frequency_mhz": 1400.0,
+      "rms_jy_per_beam": 2e-05,
+      "calibration_fraction": 0.02
+    }
+  ],
+  "selection": {
+    "snr_min": 5,
+    "min_bands": 3,
+    "require_all_bands": true,
+    "mask": "flow-mask.fits"
+  },
+  "geometry": {
+    "distance_kind": "path_length",
+    "distance_frame": "projected",
+    "distance_map": "path-length.fits",
+    "distance_error_kpc": 0.2
+  },
+  "kinematics": {
+    "mode": "flow",
+    "speed_role": "effective_flow",
+    "speed_km_s": 1000.0,
+    "speed_error_km_s": 100.0,
+    "speed_frame": "intrinsic",
+    "inclination_deg": 70.0,
+    "inclination_error_deg": 3.0,
+    "constraint_description": "Synthetic constant effective flow speed along the supplied curved projected spine"
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "schema_version": "fr2dynage-map-1",
+  "source": {
+    "name": "Synthetic FR II expansion constraint",
+    "radio_class": "fr2",
+    "activity_state": "active"
+  },
+  "images": [
+    {
+      "path": "exp-150.fits",
+      "frequency_mhz": 150.0,
+      "rms_jy_per_beam": 2e-05,
+      "calibration_fraction": 0.02
+    },
+    {
+      "path": "exp-325.fits",
+      "frequency_mhz": 325.0,
+      "rms_jy_per_beam": 2e-05,
+      "calibration_fraction": 0.02
+    },
+    {
+      "path": "exp-610.fits",
+      "frequency_mhz": 610.0,
+      "rms_jy_per_beam": 2e-05,
+      "calibration_fraction": 0.02
+    },
+    {
+      "path": "exp-1400.fits",
+      "frequency_mhz": 1400.0,
+      "rms_jy_per_beam": 2e-05,
+      "calibration_fraction": 0.02
+    }
+  ],
+  "selection": {
+    "snr_min": 5,
+    "min_bands": 3,
+    "require_all_bands": true,
+    "mask": "exp-mask.fits"
+  },
+  "geometry": {
+    "distance_kind": "radius",
+    "distance_frame": "projected",
+    "origin_pixel": [
+      24.0,
+      24.0
+    ],
+    "kpc_per_arcsec": 1.0,
+    "distance_error_kpc": 0.2
+  },
+  "kinematics": {
+    "mode": "expansion",
+    "speed_role": "current_expansion",
+    "speed_km_s": 3000.0,
+    "speed_error_km_s": 300.0,
+    "speed_frame": "intrinsic",
+    "inclination_deg": 70.0,
+    "inclination_error_deg": 3.0,
+    "expansion_index": 0.8571428571428571,
+    "expansion_index_error": 0.03,
+    "constraint_description": "Synthetic supplied current radial expansion speed; R proportional to t**m"
+  }
+}
