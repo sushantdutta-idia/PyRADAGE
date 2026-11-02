@@ -16,7 +16,7 @@ ROOT = Path(__file__).resolve().parents[1]
 def test_distribution_and_public_api_agree():
     project = tomllib.loads((ROOT / "pyproject.toml").read_text())["project"]
     assert project["name"] == "pyradage"
-    assert project["version"] == pyradage.__version__ == fr2dynage.__version__ == "0.9.0"
+    assert project["version"] == pyradage.__version__ == fr2dynage.__version__ == "1.0"
     assert pyradage.KDAForwardModel is fr2dynage.KDAForwardModel
     assert set(["pyradage", "pyradage-gui", "fr2dynage", "fr2dynage-gui"]) <= project["scripts"].keys()
 
@@ -29,7 +29,7 @@ def test_canonical_modules_share_legacy_objects_and_state():
 def test_checkout_launcher_does_not_shadow_import_package():
     code = "import pyradage, pyradage.automatic; assert hasattr(pyradage, '__path__'); print(pyradage.__version__)"
     completed = subprocess.run([sys.executable, "-c", code], cwd=ROOT, capture_output=True, text=True, check=True)
-    assert completed.stdout.strip() == "0.9.0"
+    assert completed.stdout.strip() == "1.0"
 
 
 def test_new_and_legacy_module_launchers_work_without_a_display(tmp_path):
