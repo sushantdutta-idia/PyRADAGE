@@ -1,6 +1,6 @@
 # Changes
 
-## 0.9.0 — 2026-11-02
+## PyRADAGE — 2026-11-02
 
 - Rename the project to **PyRADAGE**, with canonical `pyradage` and
   `pyradage-gui` commands, Python imports and GitHub repository metadata.
