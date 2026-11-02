@@ -105,7 +105,9 @@ def test_fits_output_preserves_wcs_units_and_mask(map_config, tmp_path):
         assert age_hdu.verify_checksum() == 1
         sky = WCS(age_hdu.header).celestial.pixel_to_world_values(3, 2)
         reference = result.reference.wcs.pixel_to_world_values(3, 2)
-        assert sky == pytest.approx(reference)
+        np.testing.assert_allclose(np.asarray(sky, dtype=float),
+                                   np.asarray(reference, dtype=float),
+                                   rtol=1e-6, atol=1e-12)
         assert np.isnan(age_hdu.data[0, 0])
         assert len(hdus) >= 5
 
