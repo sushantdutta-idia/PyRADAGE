@@ -1,0 +1,45 @@
+[build-system]
+requires = ["setuptools>=77", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pyradage"
+version = "0.9.0"
+description = "Guided multi-frequency radio-image analysis, publication radiative-age maps and constrained source dynamics"
+readme = "README.md"
+requires-python = ">=3.11"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{name = "PyRADAGE contributors"}]
+dependencies = [
+  "numpy>=2.0",
+  "scipy>=1.13",
+]
+
+[project.optional-dependencies]
+test = ["pytest>=8.0", "pytest-cov>=5.0"]
+maps = ["astropy>=6.0", "matplotlib>=3.8"]
+analysis = ["matplotlib>=3.8"]
+gui = ["astropy>=6.0", "matplotlib>=3.8"]
+
+[project.urls]
+Homepage = "https://github.com/sushantdutta-idia/PyRADAGE"
+Repository = "https://github.com/sushantdutta-idia/PyRADAGE"
+Issues = "https://github.com/sushantdutta-idia/PyRADAGE/issues"
+
+[project.scripts]
+pyradage = "pyradage.cli:main"
+pyradage-gui = "pyradage.gui:main"
+fr2dynage = "fr2dynage.cli:main"
+fr2dynage-gui = "fr2dynage.gui:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"
+markers = ["slow: end-to-end numerical regression tests"]

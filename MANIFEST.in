@@ -1,0 +1,21 @@
+include CITATION.cff
+include LICENSE
+include README.md
+include CHANGELOG.md
+include MAP_GUIDE.md
+include RADIO_INFERENCE_GUIDE.md
+include DYNAGE_ANALYSIS_GUIDE.md
+include PARAMETER_RELIABILITY.md
+include GUI_GUIDE.md
+include CONTRIBUTING.md
+include gui.py
+include launch_gui.command
+include launch_gui.bat
+recursive-include tools *.py
+include requirements-tested.txt
+include dynage.py
+include pyradage.py
+include pyproject.toml
+exclude AGENTS.md
+recursive-include examples *.json *.fits *.py
+recursive-include tests *.py

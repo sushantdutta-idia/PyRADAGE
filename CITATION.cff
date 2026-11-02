@@ -1,0 +1,93 @@
+cff-version: 1.2.0
+message: "If you use this implementation, cite the software and the KA/KDA/DYNAGE papers listed here."
+title: "PyRADAGE: guided radio-image spectral ageing and constrained source dynamics"
+type: software
+authors:
+  - name: "PyRADAGE contributors"
+version: 0.9.0
+date-released: 2026-11-02
+license: MIT
+repository-code: "https://github.com/sushantdutta-idia/PyRADAGE"
+url: "https://github.com/sushantdutta-idia/PyRADAGE"
+references:
+  - type: article
+    title: "Synchrotron and inverse-Compton emission from radio galaxies with non-uniform magnetic field and electron distributions"
+    authors:
+      - family-names: Hardcastle
+        given-names: M. J.
+    year: 2013
+    doi: "10.1093/mnras/stt1024"
+  - type: article
+    title: "Spectral ageing in the era of big data: integrated versus resolved models"
+    authors:
+      - family-names: Harwood
+        given-names: J. J.
+    year: 2017
+    doi: "10.1093/mnras/stw3318"
+  - type: software
+    title: "PyRATS"
+    authors:
+      - family-names: Dutta
+        given-names: Sushant
+    url: "https://github.com/sushantdutta-idia/PyRATS"
+    version: "2.1.0"
+  - type: article
+    title: "A method for estimating the dynamical age of FR II-type radio sources from multi-frequency data"
+    authors:
+      - family-names: Machalski
+        given-names: J.
+      - family-names: Chyzy
+        given-names: K. T.
+      - family-names: Stawarz
+        given-names: L.
+      - family-names: Koziel
+        given-names: D.
+    doi: 10.1051/0004-6361:20066121
+    year: 2007
+  - type: article
+    title: "A self-similar model for extragalactic radio sources"
+    authors:
+      - family-names: Kaiser
+        given-names: C. R.
+      - family-names: Alexander
+        given-names: P.
+    doi: 10.1093/mnras/286.1.215
+    year: 1997
+  - type: article
+    title: "Evolutionary tracks of FRII sources through the P-D diagram"
+    authors:
+      - family-names: Kaiser
+        given-names: C. R.
+      - family-names: Dennett-Thorpe
+        given-names: J.
+      - family-names: Alexander
+        given-names: P.
+    doi: 10.1093/mnras/292.3.723
+    year: 1997
+  - type: article
+    title: "The death of FR II radio sources and their connection with radio relics"
+    authors:
+      - family-names: Kaiser
+        given-names: C. R.
+      - family-names: Cotter
+        given-names: G.
+    doi: 10.1046/j.1365-8711.2002.05799.x
+    year: 2002
+  - type: article
+    title: "A dynamical model for FR II type radio sources with terminated jet activity"
+    authors:
+      - family-names: Kuligowska
+        given-names: E.
+    doi: 10.1051/0004-6361/201629033
+    year: 2017
+  - type: article
+    title: "Spectral ageing analysis and dynamical analysis of the double-double radio galaxy J1548-3216"
+    authors:
+      - family-names: Machalski
+        given-names: J.
+      - family-names: Jamrozy
+        given-names: M.
+      - family-names: Konar
+        given-names: C.
+    doi: 10.1051/0004-6361/200912797
+    year: 2010

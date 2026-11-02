@@ -1,0 +1,44 @@
+# Python and local tooling
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+coverage.xml
+htmlcov/
+.DS_Store
+.idea/
+.vscode/
+
+# Builds and development-only history
+build/
+dist/
+verification/
+backups/
+*.zip
+*.tar.gz
+EXPORT_MANIFEST.json
+
+# Observations and generated analysis outputs must stay local
+data/
+inputs/
+results/
+PyRADAGE-results/
+FR2DYNAGE-results/
+*.fits
+*.fit
+*.fts
+*.fits.gz
+*.fit.gz
+*.fts.gz
+*.npz
+*.npy
+!examples/**/*.fits
+!examples/**/*.npy
+
+# Local task instructions can contain source-specific assumptions and paths.
+AGENTS.md
