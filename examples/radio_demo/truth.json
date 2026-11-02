@@ -1,0 +1,35 @@
+{
+  "schema_version": "fr2dynage-radio-demo-truth-1",
+  "origin": "synthetic",
+  "description": "Analytic JP/advection emissivity convolved with a Gaussian restoring beam; no hydrodynamic or observed-source truth is claimed.",
+  "power_law_case": false,
+  "noise_added": false,
+  "shape_yx": [
+    55,
+    55
+  ],
+  "redshift": 0.1469,
+  "frequencies_mhz": [
+    100.0,
+    150.0,
+    325.0,
+    610.0,
+    1000.0,
+    1400.0,
+    3000.0,
+    6000.0
+  ],
+  "magnetic_field_ug": 3.0,
+  "alpha_inj": 0.65,
+  "flow_speed_km_s_by_branch": {
+    "1": 4000.0,
+    "2": 6500.0
+  },
+  "deceleration": 0.4,
+  "kpc_per_pixel": 5.3097214583674885,
+  "global_source_age_myr": null,
+  "global_source_age_status": "not_identified_by_transport_model",
+  "truth_age_is_intrinsic_unconvolved_transport_field": true,
+  "configuration": "radio.json",
+  "reference_catalogue": "reference-synthetic.json"
+}

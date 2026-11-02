@@ -1,0 +1,102 @@
+{
+  "schema_version": "fr2dynage-reference-1",
+  "description": "Synthetic software-calibration demonstration only; none of these names or constraints denotes an observed galaxy.",
+  "sources": [
+    {
+      "name": "Synthetic reference 1",
+      "radio_class": "wat",
+      "origin": "synthetic",
+      "reference": "examples/generate_radio_demo.py synthetic parameter demonstration",
+      "constraints": {
+        "flow_speed_km_s": {
+          "value": 3500.0,
+          "error": 500.0,
+          "unit": "km/s",
+          "quantity": "projected_plasma_transport_speed",
+          "method": "Declared synthetic model input; not an observational measurement",
+          "independent": true
+        },
+        "magnetic_field_ug": {
+          "value": 2.7,
+          "error": 0.2,
+          "unit": "uG",
+          "quantity": "emitting_plasma_magnetic_field",
+          "method": "Declared synthetic model input; not an observational measurement",
+          "independent": true
+        },
+        "alpha_inj": {
+          "value": 0.62,
+          "error": 0.025,
+          "unit": "1",
+          "quantity": "injection_spectral_index",
+          "method": "Declared synthetic model input; not an observational measurement",
+          "independent": true
+        }
+      }
+    },
+    {
+      "name": "Synthetic reference 2",
+      "radio_class": "wat",
+      "origin": "synthetic",
+      "reference": "examples/generate_radio_demo.py synthetic parameter demonstration",
+      "constraints": {
+        "flow_speed_km_s": {
+          "value": 5000.0,
+          "error": 500.0,
+          "unit": "km/s",
+          "quantity": "projected_plasma_transport_speed",
+          "method": "Declared synthetic model input; not an observational measurement",
+          "independent": true
+        },
+        "magnetic_field_ug": {
+          "value": 3.0,
+          "error": 0.2,
+          "unit": "uG",
+          "quantity": "emitting_plasma_magnetic_field",
+          "method": "Declared synthetic model input; not an observational measurement",
+          "independent": true
+        },
+        "alpha_inj": {
+          "value": 0.65,
+          "error": 0.025,
+          "unit": "1",
+          "quantity": "injection_spectral_index",
+          "method": "Declared synthetic model input; not an observational measurement",
+          "independent": true
+        }
+      }
+    },
+    {
+      "name": "Synthetic reference 3",
+      "radio_class": "wat",
+      "origin": "synthetic",
+      "reference": "examples/generate_radio_demo.py synthetic parameter demonstration",
+      "constraints": {
+        "flow_speed_km_s": {
+          "value": 6500.0,
+          "error": 500.0,
+          "unit": "km/s",
+          "quantity": "projected_plasma_transport_speed",
+          "method": "Declared synthetic model input; not an observational measurement",
+          "independent": true
+        },
+        "magnetic_field_ug": {
+          "value": 3.4,
+          "error": 0.2,
+          "unit": "uG",
+          "quantity": "emitting_plasma_magnetic_field",
+          "method": "Declared synthetic model input; not an observational measurement",
+          "independent": true
+        },
+        "alpha_inj": {
+          "value": 0.68,
+          "error": 0.025,
+          "unit": "1",
+          "quantity": "injection_spectral_index",
+          "method": "Declared synthetic model input; not an observational measurement",
+          "independent": true
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,99 @@
+{
+  "schema_version": "fr2dynage-radio-1",
+  "source": {
+    "name": "Synthetic steady-JP WAT",
+    "radio_class": "wat",
+    "redshift": 0.1469,
+    "activity_state": "active"
+  },
+  "images": [
+    {
+      "path": "radio-100.fits",
+      "frequency_mhz": 100.0,
+      "rms_jy_per_beam": 1e-05,
+      "calibration_fraction": 0.01
+    },
+    {
+      "path": "radio-150.fits",
+      "frequency_mhz": 150.0,
+      "rms_jy_per_beam": 1e-05,
+      "calibration_fraction": 0.01
+    },
+    {
+      "path": "radio-325.fits",
+      "frequency_mhz": 325.0,
+      "rms_jy_per_beam": 1e-05,
+      "calibration_fraction": 0.01
+    },
+    {
+      "path": "radio-610.fits",
+      "frequency_mhz": 610.0,
+      "rms_jy_per_beam": 1e-05,
+      "calibration_fraction": 0.01
+    },
+    {
+      "path": "radio-1000.fits",
+      "frequency_mhz": 1000.0,
+      "rms_jy_per_beam": 1e-05,
+      "calibration_fraction": 0.01
+    },
+    {
+      "path": "radio-1400.fits",
+      "frequency_mhz": 1400.0,
+      "rms_jy_per_beam": 1e-05,
+      "calibration_fraction": 0.01
+    },
+    {
+      "path": "radio-3000.fits",
+      "frequency_mhz": 3000.0,
+      "rms_jy_per_beam": 1e-05,
+      "calibration_fraction": 0.01
+    },
+    {
+      "path": "radio-6000.fits",
+      "frequency_mhz": 6000.0,
+      "rms_jy_per_beam": 1e-05,
+      "calibration_fraction": 0.01
+    }
+  ],
+  "selection": {
+    "snr_min": 5.0,
+    "min_bands": 4,
+    "mask": "mask.fits"
+  },
+  "geometry": {
+    "distance_map": "distance.fits",
+    "branch_map": "branches.fits",
+    "description": "Synthetic projected straight branch paths from x=7; inner beam excluded."
+  },
+  "model": {
+    "kind": "steady_jp_advection",
+    "deceleration": 0.4,
+    "log_emissivity_scatter": 0.05
+  },
+  "prior_description": "Synthetic verification only: informative B/alpha and broad speed priors are declared assumptions, not measured by these images.",
+  "priors": {
+    "flow_speed_km_s": {
+      "distribution": "lognormal",
+      "log_mean": 8.517193191416238,
+      "log_sigma": 0.5
+    },
+    "magnetic_field_ug": {
+      "distribution": "lognormal",
+      "log_mean": 1.0986122886681098,
+      "log_sigma": 0.025
+    },
+    "alpha_inj": {
+      "distribution": "normal",
+      "mean": 0.65,
+      "sigma": 0.012
+    }
+  },
+  "inference": {
+    "particles": 256,
+    "seed": 42,
+    "mcmc_steps": 4,
+    "ess_target": 0.7,
+    "max_stages": 80
+  }
+}
