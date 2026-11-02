@@ -1,0 +1,17 @@
+{
+  "origin": "synthetic, not observed",
+  "redshift": 0.15,
+  "field_t": 3e-10,
+  "alpha_inj": 0.65,
+  "age_equation_myr": "10+1.15*x before Gaussian beam convolution",
+  "frequencies_mhz": [
+    150.0,
+    350.0,
+    650.0,
+    1400.0,
+    3000.0,
+    6000.0
+  ],
+  "seed": 731,
+  "global_dynamical_age": null
+}
