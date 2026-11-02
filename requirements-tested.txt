@@ -1,4 +1,4 @@
-# Python 3.12.14 / macOS arm64 reference environment for PyRADAGE (continuing the 0.8.0 verification environment).
+# Python 3.12.14 / macOS arm64 reference environment for PyRADAGE v1.0 (continuing the 0.8.0 verification environment).
 # Install these, then: python -m pip install -e '.[test]'
 numpy==2.5.4
 scipy==1.18.1

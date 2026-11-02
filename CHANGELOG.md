@@ -1,7 +1,8 @@
 # Changes
 
-## PyRADAGE — 2026-11-02
+## PyRADAGE v1.0 — 2026-11-02
 
+- Publish PyRADAGE v1.0 with consistent package, runtime and citation versions.
 - Rename the project to **PyRADAGE**, with canonical `pyradage` and
   `pyradage-gui` commands, Python imports and GitHub repository metadata.
 - Update the GUI, desktop launchers, documentation, citation metadata and CI

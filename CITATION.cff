@@ -4,6 +4,7 @@ title: "PyRADAGE: guided radio-image spectral ageing and constrained source dyna
 type: software
 authors:
   - name: "PyRADAGE contributors"
+version: "1.0"
 date-released: 2026-11-02
 license: MIT
 repository-code: "https://github.com/sushantdutta-idia/PyRADAGE"

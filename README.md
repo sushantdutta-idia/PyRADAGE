@@ -1,5 +1,7 @@
 # PyRADAGE
 
+**Current release: v1.0**
+
 Radio-source spectral ageing, physical properties and class-aware dynamics.
 Select multi-frequency radio FITS images, enter the source redshift, and run
 the guided interface. The automatic workflow prepares the images, fits
