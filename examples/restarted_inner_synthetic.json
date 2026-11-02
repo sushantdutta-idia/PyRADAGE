@@ -1,0 +1,56 @@
+{
+  "source": {
+    "name": "Synthetic restarted source",
+    "redshift": 0.15
+  },
+  "activity": {
+    "state": "active"
+  },
+  "geometry": {
+    "mode": "two_sided",
+    "projected_size_kpc": 80.0,
+    "axial_ratio": 3.2,
+    "inclination_deg": 75.0
+  },
+  "spectrum": {
+    "power_convention": "per_sr",
+    "frequency_frame": "rest",
+    "core_subtracted": true,
+    "hotspots_subtracted": true,
+    "points": [
+      {"frequency_mhz": 74.0, "log10_power_w_hz": 26.051511841, "fractional_error": 0.06},
+      {"frequency_mhz": 151.0, "log10_power_w_hz": 25.873089197, "fractional_error": 0.06},
+      {"frequency_mhz": 325.0, "log10_power_w_hz": 25.679887097, "fractional_error": 0.06},
+      {"frequency_mhz": 610.0, "log10_power_w_hz": 25.518667930, "fractional_error": 0.06},
+      {"frequency_mhz": 1400.0, "log10_power_w_hz": 25.297682615, "fractional_error": 0.06},
+      {"frequency_mhz": 3000.0, "log10_power_w_hz": 25.079353969, "fractional_error": 0.06},
+      {"frequency_mhz": 6000.0, "log10_power_w_hz": 24.862129426, "fractional_error": 0.06},
+      {"frequency_mhz": 10000.0, "log10_power_w_hz": 24.689287047, "fractional_error": 0.06}
+    ]
+  },
+  "model": {
+    "beta": 0.0,
+    "core_radius_kpc": 10.0,
+    "gamma_min": 1.0,
+    "gamma_max": 10000000.0,
+    "gamma_c": 1.6666666666666667,
+    "gamma_x": 1.6666666666666667,
+    "gamma_b": 1.3333333333333333,
+    "k_prime": 0.0,
+    "cmb_temperature_k": 2.7255,
+    "c1_prescription": "dynage2007",
+    "integration_order": 80
+  },
+  "fit": {
+    "age_myr": [0.5, 12.0],
+    "alpha_inj": [0.48, 0.72],
+    "log10_jet_power_w": [36.5, 39.5],
+    "age_grid_size": 11,
+    "alpha_grid_size": 9,
+    "power_scan_size": 9
+  },
+  "runtime": {
+    "bootstrap_samples": 0,
+    "seed": 20260728
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "source": {
+    "name": "Cygnus A",
+    "redshift": 0.0564
+  },
+  "geometry": {
+    "mode": "two_sided",
+    "projected_size_kpc": 135.0,
+    "axial_ratio": 3.9,
+    "inclination_deg": 80.0
+  },
+  "spectrum": {
+    "power_convention": "per_sr",
+    "frequency_frame": "rest",
+    "core_subtracted": true,
+    "hotspots_subtracted": true,
+    "points": [
+      {
+        "frequency_mhz": 151.0,
+        "log10_power_w_hz": 27.796,
+        "fractional_error": 0.05
+      },
+      {
+        "frequency_mhz": 408.0,
+        "log10_power_w_hz": 27.465,
+        "fractional_error": 0.05
+      },
+      {
+        "frequency_mhz": 1400.0,
+        "log10_power_w_hz": 26.963,
+        "fractional_error": 0.05
+      },
+      {
+        "frequency_mhz": 4800.0,
+        "log10_power_w_hz": 26.358,
+        "fractional_error": 0.05
+      }
+    ]
+  },
+  "model": {
+    "beta": 1.5,
+    "core_radius_kpc": 10.0,
+    "gamma_min": 1.0,
+    "gamma_max": 10000000.0,
+    "gamma_c": 1.6666666666666667,
+    "gamma_x": 1.6666666666666667,
+    "gamma_b": 1.6666666666666667,
+    "k_prime": 0.0,
+    "cmb_temperature_k": 2.7255,
+    "c1_prescription": "dynage2007",
+    "integration_order": 160
+  },
+  "fit": {
+    "age_myr": [1.0, 30.0],
+    "alpha_inj": [0.5, 0.72],
+    "log10_jet_power_w": [37.0, 42.0],
+    "age_grid_size": 23,
+    "alpha_grid_size": 17,
+    "power_scan_size": 13
+  },
+  "runtime": {
+    "bootstrap_samples": 0,
+    "seed": 20260721
+  }
+}
+

@@ -1,0 +1,58 @@
+{
+  "source": {
+    "name": "Synthetic restarted source",
+    "redshift": 0.15
+  },
+  "activity": {
+    "state": "remnant",
+    "post_shutdown_dynamics": "kdaext2017-kc02-model-b"
+  },
+  "geometry": {
+    "mode": "two_sided",
+    "projected_size_kpc": 600.0,
+    "axial_ratio": 4.5,
+    "inclination_deg": 75.0
+  },
+  "spectrum": {
+    "power_convention": "per_sr",
+    "frequency_frame": "rest",
+    "core_subtracted": true,
+    "hotspots_subtracted": true,
+    "points": [
+      {"frequency_mhz": 74.0, "log10_power_w_hz": 26.829672782, "fractional_error": 0.06},
+      {"frequency_mhz": 151.0, "log10_power_w_hz": 26.610379866, "fractional_error": 0.06},
+      {"frequency_mhz": 325.0, "log10_power_w_hz": 26.360265247, "fractional_error": 0.06},
+      {"frequency_mhz": 610.0, "log10_power_w_hz": 26.140225615, "fractional_error": 0.06},
+      {"frequency_mhz": 1400.0, "log10_power_w_hz": 25.823697698, "fractional_error": 0.06},
+      {"frequency_mhz": 3000.0, "log10_power_w_hz": 25.499346303, "fractional_error": 0.06},
+      {"frequency_mhz": 6000.0, "log10_power_w_hz": 25.166022403, "fractional_error": 0.06},
+      {"frequency_mhz": 10000.0, "log10_power_w_hz": 24.886958384, "fractional_error": 0.06}
+    ]
+  },
+  "model": {
+    "beta": 1.5,
+    "core_radius_kpc": 10.0,
+    "gamma_min": 1.0,
+    "gamma_max": 10000000.0,
+    "gamma_c": 1.6666666666666667,
+    "gamma_x": 1.6666666666666667,
+    "gamma_b": 1.3333333333333333,
+    "k_prime": 0.0,
+    "cmb_temperature_k": 2.7255,
+    "c1_prescription": "dynage2007",
+    "integration_order": 80
+  },
+  "fit": {
+    "age_myr": [15.0, 45.0],
+    "active_fraction": [0.65, 0.95],
+    "alpha_inj": [0.5, 0.7],
+    "log10_jet_power_w": [37.8, 39.2],
+    "age_grid_size": 11,
+    "alpha_grid_size": 9,
+    "power_scan_size": 9
+  },
+  "runtime": {
+    "bootstrap_samples": 0,
+    "seed": 20260728
+  }
+}
