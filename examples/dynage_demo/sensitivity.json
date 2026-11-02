@@ -1,0 +1,16 @@
+{
+  "cases": [
+    {
+      "label": "Atmosphere beta 1.0",
+      "model": {
+        "beta": 1.0
+      }
+    },
+    {
+      "label": "Higher electron cutoff",
+      "model": {
+        "gamma_min": 100.0
+      }
+    }
+  ]
+}

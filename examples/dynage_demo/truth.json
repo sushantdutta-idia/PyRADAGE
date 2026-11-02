@@ -1,0 +1,9 @@
+{
+  "age_myr": 10.0,
+  "alpha_inj": 0.62,
+  "jet_power_w_per_jet": 1e+38,
+  "equipartition_reference_field_ug": 3.0,
+  "adopted_field_ug": 1.2,
+  "origin": "synthetic",
+  "interpretation": "known external field-reference constraint for software verification, not a measured or independently fitted equipartition field"
+}

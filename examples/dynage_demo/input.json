@@ -1,0 +1,77 @@
+{
+  "source": {
+    "name": "Synthetic active FR II field-anchor verification",
+    "redshift": 0.15,
+    "radio_class": "fr2"
+  },
+  "geometry": {
+    "projected_size_kpc": 120.0,
+    "axial_ratio": 4.0,
+    "inclination_deg": 75.0,
+    "mode": "two_sided"
+  },
+  "spectrum": {
+    "frequency_frame": "rest",
+    "power_convention": "per_sr",
+    "core_subtracted": true,
+    "hotspots_subtracted": true,
+    "points": [
+      {
+        "frequency_mhz": 100.0,
+        "power_w_hz": 5.683336494516319e+24,
+        "fractional_error": 0.03
+      },
+      {
+        "frequency_mhz": 300.0,
+        "power_w_hz": 2.861636247621897e+24,
+        "fractional_error": 0.03
+      },
+      {
+        "frequency_mhz": 600.0,
+        "power_w_hz": 1.8524823142369603e+24,
+        "fractional_error": 0.03
+      },
+      {
+        "frequency_mhz": 1500.0,
+        "power_w_hz": 1.0383224295760546e+24,
+        "fractional_error": 0.03
+      },
+      {
+        "frequency_mhz": 5000.0,
+        "power_w_hz": 4.7848956766976954e+23,
+        "fractional_error": 0.03
+      },
+      {
+        "frequency_mhz": 10000.0,
+        "power_w_hz": 3.0143228407082993e+23,
+        "fractional_error": 0.03
+      }
+    ]
+  },
+  "model": {
+    "gamma_min": 10.0,
+    "integration_order": 64,
+    "equipartition_field_ug": 3.0
+  },
+  "fit": {
+    "age_myr": [
+      3.0,
+      30.0
+    ],
+    "alpha_inj": [
+      0.5,
+      0.8
+    ],
+    "log10_jet_power_w": [
+      37.0,
+      39.5
+    ],
+    "age_grid_size": 9,
+    "alpha_grid_size": 7,
+    "power_scan_size": 9
+  },
+  "runtime": {
+    "bootstrap_samples": 0,
+    "seed": 42
+  }
+}
