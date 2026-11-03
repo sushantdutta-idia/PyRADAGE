@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Run the PyRADAGE command-line interface (legacy launcher) from a source checkout."""
+"""Keep the legacy dynage.py command available for existing source checkouts."""
 
 from __future__ import annotations
 

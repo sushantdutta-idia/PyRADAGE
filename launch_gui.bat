@@ -1,5 +1,5 @@
 @echo off
-rem Open PyRADAGE from this source checkout.
+rem Prefer the checkout virtual environment; otherwise use Python on PATH.
 setlocal
 if exist "%~dp0.venv\Scripts\python.exe" (
     "%~dp0.venv\Scripts\python.exe" "%~dp0gui.py"

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Open the guided interface from a source checkout."""
+"""Open the PyRADAGE desktop interface directly from a source checkout."""
 from pathlib import Path
 import sys
 

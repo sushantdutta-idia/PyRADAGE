@@ -1,6 +1,6 @@
 # Radio-only spectral and transport inference
 
-See [parameter reliability checks](PARAMETER_RELIABILITY.md) for v0.7.0
+See [parameter reliability checks](PARAMETER_RELIABILITY.md) for
 injection-index sensitivity products, reporting gates, physical accounting,
 distance-scale provenance and `verify-analysis`.
 

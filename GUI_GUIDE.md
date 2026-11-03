@@ -1,7 +1,7 @@
 # Guided image-to-map workflow
 
-PyRADAGE is the current project name. Legacy FR2DYNAGE commands, imports
-and scientific configuration/output schemas remain supported.
+This guide covers the PyRADAGE v1.0 desktop workflow. Legacy FR2DYNAGE
+commands, imports and scientific configuration/output schemas remain supported.
 
 ## Starting the desktop interface
 

@@ -1,6 +1,6 @@
 # DYNAGE-style source analysis
 
-Version 0.5 adds `analyze` (alias `analyze-source`), which writes a complete
+PyRADAGE provides `analyze` (alias `analyze-source`), which writes a complete
 analysis directory with a report, plots, numerical tables and provenance.
 It selects the physical analysis from the input schema. An integrated active
 FR II component receives KA/KDA/DYNAGE-style analysis; a prepared radio-image

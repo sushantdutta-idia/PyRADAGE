@@ -1,3 +1,4 @@
+# Documentation and entry points shipped with the source distribution
 include CITATION.cff
 include LICENSE
 include README.md

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Run PyRADAGE from a checkout, or forward imports to its source package."""
+"""Run PyRADAGE from a checkout and forward pyradage imports to src/pyradage."""
 from pathlib import Path
 import sys
 

@@ -14,7 +14,7 @@ htmlcov/
 .idea/
 .vscode/
 
-# Builds and development-only history
+# Local build products and verification outputs
 build/
 dist/
 verification/

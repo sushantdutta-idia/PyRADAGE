@@ -2,7 +2,7 @@
 
 Contributions are welcome at
 [sushantdutta-idia/PyRADAGE](https://github.com/sushantdutta-idia/PyRADAGE).
-Use PyRADAGE for the product name and `pyradage` for new commands/imports.
+Use PyRADAGE for the project name and `pyradage` for new commands/imports.
 Preserve legacy `fr2dynage` imports, entry points and schema identifiers so
 existing analyses remain readable; classical DYNAGE model names do not change.
 

@@ -1,6 +1,6 @@
 # Reliable source-parameter reporting
 
-Version 0.7.0 adds checks that can reject inconsistent inputs and withhold
+PyRADAGE checks can reject inconsistent inputs and withhold
 unsupported estimates. They do not guarantee the physical accuracy of a model.
 The default field prescription is **B = 0.4 B_eq** (RMS B for free-streaming
 JP–Tribble), with uncertainty in B_eq and the fraction fixed. An explicitly

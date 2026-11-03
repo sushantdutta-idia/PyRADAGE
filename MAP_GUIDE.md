@@ -1,6 +1,6 @@
 # Spatial age and flow-time maps
 
-The image workflow combines registered radio FITS images with an independent
+The constrained map workflow combines registered radio FITS images with an independent
 motion constraint to produce a conditional expansion-age or flow-travel-time
 map. It also fits spectral-index and fit-quality maps. The source-integrated
 KA/KDA fits remain available for FR II lobes.
