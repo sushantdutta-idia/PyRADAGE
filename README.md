@@ -9,7 +9,7 @@ JP–Tribble and CI spectra, and produces a combined, publication-ready age
 figure as **one PDF and one PNG**, with no top titles.
 
 Source code: [sushantdutta-idia/PyRADAGE](https://github.com/sushantdutta-idia/PyRADAGE).
-PyRADAGE is the new name of FR2DYNAGE. Existing `fr2dynage` commands,
+PyRADAGE is the Python script for estimating dynamical age using PyRATS for source properties. Existing `PyRADAGE` commands,
 Python imports and configuration/output schemas remain compatible. New
 workflows use `pyradage`, `pyradage-gui` and `python -m pyradage`.
 
@@ -65,10 +65,6 @@ On PowerShell, use `$env:PYRADAGE_PYRATS_SCRIPT = 'C:\path\to\PyRATS.py'`
 and `$env:PYRADAGE_PYRATS_PYTHON = 'C:\path\to\python.exe'`. PyRATS is run
 as an external, isolated process. Its GPL licence remains separate from this
 repository's MIT licence; its source is not bundled here.
-
-The legacy `FR2DYNAGE_PYRATS_SCRIPT` and `FR2DYNAGE_PYRATS_PYTHON`
-variables remain accepted; the corresponding `PYRADAGE_` value takes
-precedence when both names are set.
 
 After setup, the normal GUI workflow needs only **images and redshift**. If a
 source field is independently supplied, the optional fixed-field input can
